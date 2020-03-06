@@ -1,0 +1,57 @@
+@import './assets/scss/fonts.scss';
+@import './assets/scss/functions.scss';
+@import './assets/scss/typography.scss';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+  border: 0;
+  background: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  cursor: pointer;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+main{
+  width: 100%;
+  height: max-content;
+}
+
+//minor ui elements
+
+@import './assets/scss/ui/button.scss';
+@import './assets/scss/ui/post.scss';
+
+@media screen and (min-width: 1025px){
+
+  //pages and major ui elements
+
+  @import './assets/scss/pc/header.scss';
+  @import './assets/scss/pc/homepage.scss';
+}
+
+@media screen and (max-width: 1024px){
+
+  //pages and major ui elements
+
+  @import './assets/scss/mobile/header.scss';
+  @import './assets/scss/mobile/homepage.scss';
+}

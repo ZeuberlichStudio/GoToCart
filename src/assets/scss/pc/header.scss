@@ -1,0 +1,111 @@
+header{
+  width: 100vw;
+  height: get-vw(64px);
+  padding: 0 get-vw(20px);
+  left: 0; top: 0;
+
+  position: fixed;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns:
+  repeat(2, max-content) 1fr
+  repeat(2, max-content);
+  grid-template-areas:
+  'logo catalog . search navigation';
+  grid-column-gap: get-vw(30px);
+  align-items: center;
+
+  border-bottom: get-vw(2px) solid white;
+  backdrop-filter: blur(16px);
+  color: white;
+  z-index: 2;
+
+  .logo-wrapper img{
+    grid-area: logo;
+
+    width: get-vw(136px);
+    height: auto;
+    display: block;
+  }
+
+  .catalog-link{
+    grid-area: catalog;
+
+    display: flex;
+
+    &::before{
+      width: get-vw(18px);
+      height: get-vw(18px);
+      margin-right: get-vw(10px);
+      align-self: center;
+
+      display: inline-block;
+
+      background-image: url('../../images/catalog.svg');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  .search-bar{
+    grid-area: search;
+
+    display: flex;
+
+    &::before{
+      width: get-vw(20px);
+      height: get-vw(20px);
+      margin-right: get-vw(10px);
+      align-self: center;
+
+      display: inline-block;
+
+      background-image: url('../../images/search.svg');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+
+    form input{
+      width: get-vw(150px);
+      border-bottom: get-vw(2px) solid white;
+      color: white;
+    }
+  }
+
+  .navigation{
+    grid-area: navigation;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: get-vw(30px);
+
+    a{ display: flex; }
+
+    a::after{
+      width: get-vw(20px);
+      height: get-vw(20px);
+      margin-left: get-vw(10px);
+      align-self: center;
+
+      display: inline-block;
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+    & :nth-child(1)::after{
+      background-image: url('../../images/sales.svg');
+    }
+    & :nth-child(2)::after{
+      background-image: url('../../images/favourite.svg');
+    }
+    & :nth-child(3)::after{
+      background-image: url('../../images/cart.svg');
+    }
+  }
+}
