@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/gotocart/static/css/main.eebaab18.chunk.css",
+    "main.js": "/gotocart/static/js/main.7fc180cf.chunk.js",
+    "main.js.map": "/gotocart/static/js/main.7fc180cf.chunk.js.map",
+    "runtime-main.js": "/gotocart/static/js/runtime-main.08670b69.js",
+    "runtime-main.js.map": "/gotocart/static/js/runtime-main.08670b69.js.map",
+    "static/js/2.6384ae39.chunk.js": "/gotocart/static/js/2.6384ae39.chunk.js",
+    "static/js/2.6384ae39.chunk.js.map": "/gotocart/static/js/2.6384ae39.chunk.js.map",
+    "index.html": "/gotocart/index.html",
+    "precache-manifest.9bbe8fd85efa17196b222f15bcd1416c.js": "/gotocart/precache-manifest.9bbe8fd85efa17196b222f15bcd1416c.js",
+    "service-worker.js": "/gotocart/service-worker.js",
+    "static/css/main.eebaab18.chunk.css.map": "/gotocart/static/css/main.eebaab18.chunk.css.map",
+    "static/js/2.6384ae39.chunk.js.LICENSE.txt": "/gotocart/static/js/2.6384ae39.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/gotocart/static/media/search.f49b0722.svg",
+    "static/media/logo.svg": "/gotocart/static/media/logo.c2bb9448.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08670b69.js",
+    "static/js/2.6384ae39.chunk.js",
+    "static/css/main.eebaab18.chunk.css",
+    "static/js/main.7fc180cf.chunk.js"
+  ]
+}
