@@ -18,7 +18,7 @@ export default class Home extends Component{
   }
 
   getProductDetail = () => {
-    let url = `http://localhost:8888/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=desc`;
+    let url = `http://gooogl8e.beget.tech/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=desc`;
     fetch(url, {
         method: 'GET',
     }).then((response) => response.json())
