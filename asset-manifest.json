@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/gotocart/static/css/main.eebaab18.chunk.css",
-    "main.js": "/gotocart/static/js/main.7fc180cf.chunk.js",
-    "main.js.map": "/gotocart/static/js/main.7fc180cf.chunk.js.map",
-    "runtime-main.js": "/gotocart/static/js/runtime-main.08670b69.js",
-    "runtime-main.js.map": "/gotocart/static/js/runtime-main.08670b69.js.map",
-    "static/js/2.6384ae39.chunk.js": "/gotocart/static/js/2.6384ae39.chunk.js",
-    "static/js/2.6384ae39.chunk.js.map": "/gotocart/static/js/2.6384ae39.chunk.js.map",
-    "index.html": "/gotocart/index.html",
-    "precache-manifest.9bbe8fd85efa17196b222f15bcd1416c.js": "/gotocart/precache-manifest.9bbe8fd85efa17196b222f15bcd1416c.js",
-    "service-worker.js": "/gotocart/service-worker.js",
-    "static/css/main.eebaab18.chunk.css.map": "/gotocart/static/css/main.eebaab18.chunk.css.map",
-    "static/js/2.6384ae39.chunk.js.LICENSE.txt": "/gotocart/static/js/2.6384ae39.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/gotocart/static/media/search.f49b0722.svg",
-    "static/media/logo.svg": "/gotocart/static/media/logo.c2bb9448.svg"
+    "main.css": "/GoToCart/static/css/main.a28d233f.chunk.css",
+    "main.js": "/GoToCart/static/js/main.2e9363f6.chunk.js",
+    "main.js.map": "/GoToCart/static/js/main.2e9363f6.chunk.js.map",
+    "runtime-main.js": "/GoToCart/static/js/runtime-main.641cd387.js",
+    "runtime-main.js.map": "/GoToCart/static/js/runtime-main.641cd387.js.map",
+    "static/js/2.6384ae39.chunk.js": "/GoToCart/static/js/2.6384ae39.chunk.js",
+    "static/js/2.6384ae39.chunk.js.map": "/GoToCart/static/js/2.6384ae39.chunk.js.map",
+    "index.html": "/GoToCart/index.html",
+    "precache-manifest.22801b47c8ff13e0a878b8009fed7fe6.js": "/GoToCart/precache-manifest.22801b47c8ff13e0a878b8009fed7fe6.js",
+    "service-worker.js": "/GoToCart/service-worker.js",
+    "static/css/main.a28d233f.chunk.css.map": "/GoToCart/static/css/main.a28d233f.chunk.css.map",
+    "static/js/2.6384ae39.chunk.js.LICENSE.txt": "/GoToCart/static/js/2.6384ae39.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/GoToCart/static/media/search.f49b0722.svg",
+    "static/media/logo.svg": "/GoToCart/static/media/logo.c2bb9448.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.08670b69.js",
+    "static/js/runtime-main.641cd387.js",
     "static/js/2.6384ae39.chunk.js",
-    "static/css/main.eebaab18.chunk.css",
-    "static/js/main.7fc180cf.chunk.js"
+    "static/css/main.a28d233f.chunk.css",
+    "static/js/main.2e9363f6.chunk.js"
   ]
 }
