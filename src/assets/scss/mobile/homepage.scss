@@ -218,6 +218,7 @@
 
   background-color: white;
   border-radius: m-get-vw(20px);
+  will-change: transform;
 
   z-index: 2;
 }

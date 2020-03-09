@@ -18,9 +18,15 @@ export default class Home extends Component{
   }
 
   getProductDetail = () => {
-    let url = `http://gooogl8e.beget.tech/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=desc`;
+    let key = 'ck_31349ab1923c0e479caefb9bc98ddd4b8f5e7ac6';
+    let secret = 'cs_6d1936865d79726b24949ce24850534fb88bd5e4';
+    let login_data = btoa(key + ":" + secret);
+
+    let url = 'https://gotocart.zeuberlich.com/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=desc';
+    let url_test = `https://gotocart.zeuberlich.com/wp-json/wc/v3/products`;
     fetch(url, {
         method: 'GET',
+        mode: 'cors'
     }).then((response) => response.json())
     .then((response) => {
         this.setState({posts: response})
