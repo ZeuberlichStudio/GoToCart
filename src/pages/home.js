@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import SearchBar from '../components/search-bar.component.js';
-import Categories from '../components/categories.component.js';
-import Slider from '../components/slider.component.js';
-import Post from '../components/post.component.js';
+import SearchBar from '../components/ui/search-bar.component.js';
+import Categories from '../components/home/categories.component.js';
+import Slider from '../components/ui/slider.component.js';
+import Post from '../components/home/post.component.js';
 
 export default class Home extends Component{
 
@@ -22,13 +22,12 @@ export default class Home extends Component{
     let secret = 'cs_6d1936865d79726b24949ce24850534fb88bd5e4';
     let login_data = btoa(key + ":" + secret);
 
-    let url = 'https://gotocart.zeuberlich.com/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=desc';
-    let url_test = `https://gotocart.zeuberlich.com/wp-json/wc/v3/products`;
+    let url = 'http://localhost:8888/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=desc';
     fetch(url, {
         method: 'GET',
         mode: 'cors'
-    }).then((response) => response.json())
-    .then((response) => {
+    }).then( response => response.json() )
+    .then( response => {
         this.setState({posts: response})
     }).catch(function (error) {
             console.log(error)

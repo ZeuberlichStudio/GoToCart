@@ -45,7 +45,9 @@ main{
   //pages and major ui elements
 
   @import './assets/scss/pc/header.scss';
+  @import './assets/scss/pc/menu.scss';
   @import './assets/scss/pc/homepage.scss';
+  @import './assets/scss/pc/catalogpage.scss';
 }
 
 @media screen and (max-width: 1024px){

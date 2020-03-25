@@ -18,7 +18,7 @@ header{
   border-bottom: get-vw(2px) solid white;
   backdrop-filter: blur(16px);
   color: white;
-  z-index: 2;
+  z-index: 3;
 
   .logo-wrapper img{
     grid-area: logo;
@@ -28,10 +28,11 @@ header{
     display: block;
   }
 
-  .catalog-link{
+  .catalog-button{
     grid-area: catalog;
 
     display: flex;
+    color: white;
 
     &::before{
       width: get-vw(18px);

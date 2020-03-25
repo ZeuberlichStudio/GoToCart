@@ -5,7 +5,7 @@ export default class SearchBar extends Component{
     return(
       <div className={("search-bar ") + this.props.className}>
         <form>
-          <input type="text" name="search" placeholder={ this.props.placeholder } className="proxima-18 m-proxima-12"/>
+          <input onChange={ this.loadResults() } type="text" name="search" placeholder={ this.props.placeholder } className="proxima-18 m-proxima-12"/>
           <button></button>
         </form>
       </div>

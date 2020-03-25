@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import ReactHtmlParser from 'react-html-parser';
-import ButtonLink from './button-link.component.js';
+import ButtonLink from '../ui/button-link.component.js';
 
 export default class Post extends Component{
   render() {

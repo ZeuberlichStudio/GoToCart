@@ -19,23 +19,21 @@
   }
 
   .post-small{
-    grid-row-start: span 2;
-    margin: get-vw(15px);
+    grid-row-start: span 1;
+    width: 100%;
+    height: get-vw(285px);
     background-color: grey;
   }
-  .post-medium-small{
-    grid-row-start: span 3;
-    margin: get-vw(15px);
-    background-color: black;
-  }
   .post-medium{
-    grid-row-start: span 4;
-    margin: get-vw(15px);
+    grid-row-start: span 2;
+    width: 100%;
+    height: get-vw(615px);
     background-color: black;
   }
   .post-big{
-    grid-row-start: span 6;
-    margin: get-vw(15px);
+    grid-row-start: span 3;
+    width: 100%;
+    height: get-vw(945px);
     background-color: green;
   }
 
