@@ -1,0 +1,13 @@
+$vw-viewport: 1920;
+@function get-vw($size){
+  $vw-context: $vw-viewport * 0.01 * 1px;
+  @return $size / $vw-context * 1vw;
+  @return $size;
+}
+
+$m-vw-viewport: 375;
+@function m-get-vw($size){
+  $m-vw-context: $m-vw-viewport * 0.01 * 1px;
+  @return $size / $m-vw-context * 1vw;
+  @return $size;
+}

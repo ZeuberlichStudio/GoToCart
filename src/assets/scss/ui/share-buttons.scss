@@ -1,0 +1,25 @@
+.vk-share-button,
+.fb-share-button,
+.add-to-fav-button{
+  width: get-vw(20px);
+  height: get-vw(20px);
+  display: block;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vk-share-button{
+  width: get-vw(25px);
+  height: get-vw(20px);
+  background-image: url('~assets/images/vk.svg');
+}
+
+.fb-share-button{
+  background-image: url('~assets/images/fb.svg');
+}
+
+.add-to-fav-button{
+  background-image: url('~assets/images/favourite.svg');
+}

@@ -1,0 +1,80 @@
+@media screen and (min-width: 1025px){
+
+  .post{
+    padding: get-vw(30px);
+    border-radius: get-vw(16px);
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    & > p{
+      margin-top: get-vw(5px);
+    }
+
+    .button-link{
+      margin-top: get-vw(20px);
+    }
+  }
+
+  .post-small{
+    grid-row-start: span 2;
+    margin: get-vw(15px);
+    background-color: grey;
+  }
+  .post-medium-small{
+    grid-row-start: span 3;
+    margin: get-vw(15px);
+    background-color: black;
+  }
+  .post-medium{
+    grid-row-start: span 4;
+    margin: get-vw(15px);
+    background-color: black;
+  }
+  .post-big{
+    grid-row-start: span 6;
+    margin: get-vw(15px);
+    background-color: green;
+  }
+
+}
+
+@media screen and (max-width: 1024px){
+
+  .post{
+    padding: m-get-vw(16px);
+    border-radius: m-get-vw(10px);
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    & > p{
+      margin-top: m-get-vw(5px);
+    }
+
+    .button-link{
+      margin-top: m-get-vw(18px);
+    }
+  }
+
+  .post-small{
+    width: 100%;
+    height: m-get-vw(173px);
+    background-color: grey;
+  }
+  .post-medium{
+    width: 100%;
+    height: m-get-vw(264px);
+    background-color: black;
+  }
+  .post-big{
+    width: 100%;
+    height: m-get-vw(548px);
+    background-color: green;
+  }
+
+}

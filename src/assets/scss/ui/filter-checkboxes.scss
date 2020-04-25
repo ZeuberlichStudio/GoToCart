@@ -1,0 +1,225 @@
+@mixin labeled-checkbox{
+  .labeled-checkbox{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    input[type=checkbox]{
+      width: 0;
+      height: 0;
+      left:0; top: 0;
+      position: absolute;
+    }
+
+    &_label{
+      width: max-content;
+      height: get-vw(32px);
+      padding-left: get-vw(14px);
+      padding-right: get-vw(30px);
+      display: block;
+
+      border-radius: get-vw(22px);
+      border: get-vw(2px) solid #282B2F;
+      color: #282B2F;
+
+      @include muller-16-medium;
+      line-height: get-vw(29px);
+    }
+
+    input:checked ~ span{
+      background-color: #282B2F;
+      color: white;
+
+      &::before{
+        width: get-vw(8px);
+        height: get-vw(8px);
+        right: get-vw(12px);
+        top: 0; bottom: 0;
+        margin: auto;
+
+        position: absolute;
+
+        mask-image: url('~assets/images/close.svg');
+        mask-size: cover;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        background-color: white;
+        content: '';
+      }
+    }
+  }
+}
+
+@mixin color-checkbox{
+  .color-checkbox{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    input[type=checkbox]{
+      width: 0;
+      height: 0;
+      left:0; top: 0;
+      position: absolute;
+    }
+
+    span{
+      width: get-vw(58px);
+      height: get-vw(32px);
+      display: block;
+
+      border-radius: get-vw(22px);
+      border: get-vw(2px) solid #282B2F;
+
+      i{
+        width: get-vw(32px);
+        height: get-vw(32px);
+        margin-left: get-vw(-2px);
+        margin-top: get-vw(-2px);
+        display: block;
+
+        border-radius: 50%;
+        border: get-vw(2px) solid #282B2F;
+      }
+    }
+
+    input:checked ~ span{
+      background-color: #282B2F;
+
+      &::before{
+        width: get-vw(8px);
+        height: get-vw(8px);
+        right: get-vw(12px);
+        top: 0; bottom: 0;
+        margin: auto;
+
+        position: absolute;
+
+        mask-image: url('~assets/images/close.svg');
+        mask-size: cover;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        background-color: white;
+        content: '';
+      }
+    }
+  }
+}
+
+//light checkboxes
+
+@mixin labeled-checkbox-light{
+  .labeled-checkbox{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    input[type=checkbox]{
+      width: 0;
+      height: 0;
+      left:0; top: 0;
+      position: absolute;
+    }
+
+    &_label{
+      width: max-content;
+      height: get-vw(32px);
+      padding-left: get-vw(14px);
+      padding-right: get-vw(30px);
+      display: block;
+
+      border-radius: get-vw(22px);
+      border: get-vw(2px) solid white;
+      color: white;
+
+      @include muller-16-medium;
+      line-height: get-vw(29px);
+    }
+
+    input:checked ~ span{
+      background-color: white;
+      color: #282B2F;
+
+      &::before{
+        width: get-vw(8px);
+        height: get-vw(8px);
+        right: get-vw(12px);
+        top: 0; bottom: 0;
+        margin: auto;
+
+        position: absolute;
+
+        mask-image: url('~assets/images/close.svg');
+        mask-size: cover;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        background-color: #282B2F;
+        content: '';
+      }
+    }
+  }
+}
+
+@mixin color-checkbox-light{
+  .color-checkbox{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    input[type=checkbox]{
+      width: 0;
+      height: 0;
+      left:0; top: 0;
+      position: absolute;
+    }
+
+    span{
+      width: get-vw(58px);
+      height: get-vw(32px);
+      display: block;
+
+      border-radius: get-vw(22px);
+      border: get-vw(2px) solid white;
+
+      i{
+        width: get-vw(32px);
+        height: get-vw(32px);
+        margin-left: get-vw(-2px);
+        margin-top: get-vw(-2px);
+        display: block;
+
+        border-radius: 50%;
+        border: get-vw(2px) solid white;
+      }
+    }
+
+    input:checked ~ span{
+      background-color: white;
+
+      &::before{
+        width: get-vw(8px);
+        height: get-vw(8px);
+        right: get-vw(12px);
+        top: 0; bottom: 0;
+        margin: auto;
+
+        position: absolute;
+
+        mask-image: url('~assets/images/close.svg');
+        mask-size: cover;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        background-color: #282B2F;
+        content: '';
+      }
+    }
+  }
+}

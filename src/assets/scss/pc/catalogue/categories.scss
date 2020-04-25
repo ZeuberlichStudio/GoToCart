@@ -1,0 +1,27 @@
+#categories{
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+
+  background-color: skyblue;
+}
+
+.catalog-container{
+  width: 100vw;
+  height: max-content;
+  padding: get-vw(30px);
+  margin-top: 100vh;
+
+  background-color: white;
+  border-radius: get-vw(30px);
+}
+
+#catalog-items-container.grid-1{
+  margin-top: get-vw(30px);
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: get-vw(560.5px);
+  grid-template-columns: repeat(3, get-vw(442.5px));
+  grid-gap: get-vw(30px);
+}

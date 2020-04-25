@@ -1,0 +1,25 @@
+@mixin comment{
+  li{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: max-content 1fr;
+    grid-row-gap: get-vw(5px);
+    grid-column-gap: get-vw(10px);
+
+    .product-comment_author-avatar{
+      width: get-vw(64px);
+      height: get-vw(64px);
+      display: block;
+      border-radius: 50%;
+      grid-row: 1/3;
+    }
+
+    .product-comment_author-name,
+    .product-comment_comment-content{
+      grid-column: 2/3;
+    }
+    .product-comment_author-name{
+      color: black;
+    }
+  }
+}

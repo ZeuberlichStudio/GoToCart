@@ -1,0 +1,276 @@
+@import '~assets/scss/ui/tabs.scss';
+@import '~assets/scss/ui/comments.scss';
+@import '~assets/scss/ui/product-attributes.scss';
+@import '~assets/scss/ui/share-buttons.scss';
+
+#individual-product-wrapper{
+  width: 100vw;
+  height: 100vh;
+  left: 0; top: 0;
+  position: fixed;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  z-index: 10;
+}
+
+#individual-product{
+  width: get-vw(1400px);
+  height: max-content;
+  min-height: calc(100vh - #{get-vw(86px * 2)});
+  padding: get-vw(30px);
+  left: 0; right: 0;
+  margin: get-vw(86px) auto;
+
+  position: absolute;
+
+  background-color: white;
+  border-radius: get-vw(30px);
+
+  &_share{
+    right: get-vw(54px);
+    top: get-vw(18px);
+    position: absolute;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-column-gap: get-vw(6px);
+  }
+
+  &_close{
+    width: get-vw(14px);
+    height: get-vw(14px);
+    right: get-vw(25px); top: get-vw(21px);
+    position: absolute;
+
+    background-image: url('~assets/images/close.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+// PRODUCT IMAGES START
+
+@mixin product_images{
+  &_images{
+    width: get-vw(655px);
+
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-row-gap: get-vw(15px);
+
+    &_selected-wrapper img{
+      width: get-vw(655px);
+      height: get-vw(655px);
+
+      border-radius: get-vw(16px);
+      box-shadow: 0px get-vw(3px) get-vw(8px) rgba(0,0,0,0.25);
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &_selector{
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-rows: get-vw(64px);
+      grid-auto-columns: get-vw(64px);
+      grid-column-gap: get-vw(15px);
+
+      button{
+        width: 100%;
+        height: 100%;
+
+        &.active-image img{
+          border: get-vw(2px) solid #282B2F;
+        }
+
+        & img{
+          width: 100%;
+          height: 100%;
+          border-radius: get-vw(16px);
+          box-shadow: 0px get-vw(3px) get-vw(8px) rgba(0,0,0,0.25);
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+
+// PRODUCT IMAGES END
+
+// PRODUCT INFO START
+
+@mixin product_info{
+  &_info{
+    padding-top: get-vw(5px);
+    padding-bottom: get-vw(68px);
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(3, max-content) 1fr repeat(3, max-content);
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: get-vw(30px);
+
+    color: #282B2F;
+
+    &_title,
+    &_sku,
+    &_stock,
+    &_tabs{
+      grid-column: 1/3;
+    }
+
+    &_title{
+      @include muller-60-bold;
+    }
+
+    &_sku{
+      opacity: 0.5;
+      @include muller-20-bold;
+    }
+
+    &_brand{
+      @include muller-20-bold;
+
+      & :first-child{
+        opacity: 0.5;
+      }
+    }
+
+    &_tabs{
+      margin-top: get-vw(20px);
+      display: grid;
+      grid-auto-rows: max-content 1fr;
+      overflow: hidden;
+
+      @include tabs-controls;
+
+      &_content{
+        margin-top: get-vw(16px);
+        margin-bottom: get-vw(16px);
+
+        overflow-y: auto;
+
+        &_description{
+          @include muller-16-medium;
+        }
+
+        &_attributes{
+          max-width: get-vw(760px);
+          display: grid;
+          grid-auto-rows: max-content;
+          grid-row-gap: get-vw(10px);
+
+          @include attribute;
+        }
+
+        &_comments{
+          max-width: get-vw(710px);
+          display: grid;
+          grid-auto-rows: max-content;
+          grid-row-gap: get-vw(16px);
+
+          @include comment;
+        }
+      }
+    }
+
+    &_colors{
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+      grid-auto-rows: max-content;
+      grid-row-gap: get-vw(5px);
+      grid-column-gap: get-vw(10px);
+
+      span{
+        grid-column: span 5;
+        @include muller-20-bold;
+      }
+
+      li{
+        width: get-vw(32px);
+        height: get-vw(32px);
+        grid-row: 2/3;
+        border-radius: 50%;
+        box-shadow: 0px get-vw(3px) get-vw(8px) rgba(0,0,0,0.2);
+      }
+    }
+
+    &_stock{
+      margin-top: get-vw(10px);
+      color: black;
+      @include muller-20-bold;
+
+      span{
+        color: rgba(81, 71, 72, 0.5);
+      }
+    }
+
+    &_buy{
+      width: get-vw(244px);
+      height: get-vw(42px);
+      margin-top: get-vw(10px);
+
+      display: grid;
+      grid-template-columns: 1fr get-vw(120px);
+
+      border-radius: get-vw(22px);
+      border: get-vw(2px) solid #282B2F;
+
+      & > *{
+        @include muller-20-medium;
+        line-height: get-vw(41px);
+      }
+
+      input{
+        width: 100%;
+        padding-left: get-vw(10px);
+      }
+
+      button{
+        width: 100%;
+        height: get-vw(38px);
+        margin-left: get-vw(2px);
+        background-color: #282B2F;
+        border-radius: get-vw(22px);
+        color: white;
+      }
+    }
+
+    &_price{
+      margin-top: get-vw(4px);
+      @include muller-60-bold;
+
+      & :last-child{
+        display: block;
+        margin-top: get-vw(-10px);
+        opacity: 0.5;
+        @include muller-16-medium;
+      }
+    }
+  }
+}
+
+// PRODUCT INFO END
+
+.product{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: get-vw(30px);
+
+  @include product_images;
+  @include product_info;
+}
+
+.related-products{
+  margin-top: get-vw(60px);
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: get-vw(442px);
+  grid-template-columns: repeat(4, get-vw(348px));
+  grid-gap: get-vw(30px);
+}

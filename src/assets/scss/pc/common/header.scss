@@ -1,0 +1,113 @@
+header{
+  width: 100%;
+  height: get-vw(64px);
+  padding: 0 get-vw(20px);
+  left: 0; top: 0;
+
+  position: fixed;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns:
+  repeat(2, max-content) 1fr
+  repeat(2, max-content);
+  grid-template-areas:
+  'logo catalog . search navigation';
+  grid-column-gap: get-vw(30px);
+  align-items: center;
+
+  border-bottom: get-vw(2px) solid white;
+  backdrop-filter: blur(16px);
+  background-color: rgba(40,43,47,0.5);
+  color: white;
+  z-index: 3;
+
+  .logo-wrapper img{
+    grid-area: logo;
+
+    width: get-vw(136px);
+    height: auto;
+    display: block;
+  }
+
+  .catalog-button{
+    grid-area: catalog;
+
+    display: flex;
+    color: white;
+
+    &::before{
+      width: get-vw(18px);
+      height: get-vw(18px);
+      margin-right: get-vw(10px);
+      align-self: center;
+
+      display: inline-block;
+
+      background-image: url('~assets/images/catalog.svg');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  .search-bar{
+    grid-area: search;
+
+    display: flex;
+
+    &::before{
+      width: get-vw(20px);
+      height: get-vw(20px);
+      margin-right: get-vw(10px);
+      align-self: center;
+
+      display: inline-block;
+
+      background-image: url('~assets/images/search.svg');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+
+    form input{
+      width: get-vw(150px);
+      border-bottom: get-vw(2px) solid white;
+      color: white;
+    }
+  }
+
+  .navigation{
+    grid-area: navigation;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: get-vw(30px);
+
+    a{ display: flex; }
+
+    a::after{
+      width: get-vw(20px);
+      height: get-vw(20px);
+      margin-left: get-vw(10px);
+      align-self: center;
+
+      display: inline-block;
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+    & :nth-child(1)::after{
+      background-image: url('~assets/images/sales.svg');
+    }
+    & :nth-child(2)::after{
+      background-image: url('~assets/images/star.svg');
+    }
+    & :nth-child(3)::after{
+      background-image: url('~assets/images/cart.svg');
+    }
+  }
+}

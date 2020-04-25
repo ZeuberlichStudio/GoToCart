@@ -1,0 +1,34 @@
+@mixin tabs-controls{
+  &_controls{
+    width: max-content;
+    height: get-vw(42px);
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-auto-rows: get-vw(42px);
+
+    border-radius: get-vw(22px);
+    border: get-vw(2px) solid #282B2F;
+
+    button{
+      width: 100%;
+      height: get-vw(42px);
+      padding: 0 get-vw(15px);
+      margin-top: get-vw(-2px);
+      border-radius: get-vw(22px);
+      background-color: transparent;
+
+      @include muller-20-medium;
+      line-height: get-vw(46px)!important;
+    }
+
+    button.active-tab{
+      background-color: #282B2F;
+      color: white;
+    }
+
+    button:first-child{ margin-left: get-vw(-2px); }
+    button:last-child{ margin-left: get-vw(2px); }
+  }
+}

@@ -1,0 +1,156 @@
+//fonts
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+@font-face{
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Semibold.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face{
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 700;
+}
+
+//mixins
+@mixin muller-60-bold{
+  font-family: 'Muller';
+  font-size: get-vw(60px);
+  line-height: get-vw(60px);
+  font-weight: 700;
+}
+
+@mixin muller-35-bold{
+  font-family: 'Muller';
+  font-size: get-vw(35px);
+  line-height: get-vw(35px);
+  font-weight: 700;
+}
+
+@mixin muller-30-bold{
+  font-family: 'Muller';
+  font-size: get-vw(30px);
+  line-height: get-vw(30px);
+  font-weight: 700;
+}
+
+@mixin muller-20-bold{
+  font-family: 'Muller';
+  font-size: get-vw(20px);
+  line-height: get-vw(20px);
+  font-weight: 700;
+}
+
+@mixin muller-20-medium{
+  font-family: 'Muller';
+  font-size: get-vw(20px);
+  line-height: get-vw(20px);
+  font-weight: 500;
+}
+
+@mixin muller-16-bold{
+  font-family: 'Muller';
+  font-size: get-vw(16px);
+  line-height: get-vw(18px);
+  font-weight: 700;
+}
+
+@mixin muller-16-medium{
+  font-family: 'Muller';
+  font-size: get-vw(16px);
+  line-height: get-vw(18px);
+  font-weight: 500;
+}
+
+@mixin muller-14-medium{
+  font-family: 'Muller';
+  font-size: get-vw(14px);
+  line-height: get-vw(16px);
+  font-weight: 500;
+}
+
+@mixin montserrat-56 {
+  font-family: 'Montserrat';
+  font-size: get-vw(56px);
+  line-height: get-vw(56px);
+  font-weight: 700;
+}
+
+@mixin proxima-18{
+  font-family: 'Proxima Nova';
+  font-size: get-vw(18px);
+  line-height: get-vw(20px);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1025px){
+
+  .montserrat-80{
+    font-family: 'Montserrat';
+    font-size: get-vw(80px);
+    line-height: get-vw(80px);
+    font-weight: 700;
+  }
+
+  .montserrat-56{
+    font-family: 'Montserrat';
+    font-size: get-vw(56px);
+    line-height: get-vw(56px);
+    font-weight: 700;
+  }
+
+  .montserrat-38{
+    font-family: 'Montserrat';
+    font-size: get-vw(38px);
+    line-height: get-vw(38px);
+    font-weight: 700;
+  }
+
+  .montserrat-30{
+    font-family: 'Montserrat';
+    font-size: get-vw(30px);
+    line-height: get-vw(30px);
+    font-weight: 700;
+  }
+
+  .proxima-18{
+    font-family: 'Proxima Nova';
+    font-size: get-vw(18px);
+    line-height: get-vw(20px);
+    font-weight: 600;
+  }
+
+}
+
+@media screen and (max-width: 1024px){
+
+  .m-montserrat-30{
+    font-family: 'Montserrat';
+    font-size: m-get-vw(30px);
+    line-height: m-get-vw(30px);
+    font-weight: 700;
+  }
+
+  .m-montserrat-18{
+    font-family: 'Montserrat';
+    font-size: m-get-vw(18px);
+    line-height: m-get-vw(18px);
+    font-weight: 700;
+  }
+
+  .m-proxima-12{
+    font-family: 'Proxima Nova';
+    font-size: m-get-vw(12px);
+    line-height: m-get-vw(14px);
+    font-weight: 600;
+  }
+
+}
