@@ -55,7 +55,7 @@ export default function Filters(props) {
         </div>
 
         <div className="catalog-container_filters_form_fieldset">
-          <legend>Цена ₽</legend>
+          <legend>Цена (руб.)</legend>
           <input type="number" data-filter="min_price" placeholder="От"/>
           <input type="number" data-filter="max_price" placeholder="До"/>
         </div>

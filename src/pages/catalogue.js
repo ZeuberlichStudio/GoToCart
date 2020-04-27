@@ -12,7 +12,7 @@ export default function( props ) {
     <div>
       <Switch>
         <Route path={`${path}/search`} render={ props => <Products {...props}/> }/>
-        <Route exact path={path} render={ props => <Categories {...props}/> }/>
+        <Route exact path={`${path}`} render={ props => <Categories {...props}/> }/>
         <Route exact path={`${path}/:cat_id`} render={ props => <Categories {...props}/> }/>
         <Route path={`${path}/:cat_id/:subcat_id`} render={ props => <Products {...props}/> }/>
       </Switch>

@@ -1,6 +1,7 @@
-@import './assets/scss/fonts.scss';
-@import './assets/scss/functions.scss';
-@import './assets/scss/typography.scss';
+@import '~assets/scss/variables.scss';
+@import '~assets/scss/fonts.scss';
+@import '~assets/scss/functions.scss';
+@import '~assets/scss/typography.scss';
 
 *{
   box-sizing: border-box;
@@ -47,6 +48,7 @@ main{
   @import 'assets/scss/pc/common/header.scss';
   @import 'assets/scss/pc/common/menu.scss';
   @import 'assets/scss/ui/loading.scss';
+  @import 'assets/scss/ui/scrollbar.scss';
   @import 'assets/scss/pc/pages/home-page.scss';
   @import 'assets/scss/pc/pages/catalogue-page.scss';
   @import 'assets/scss/pc/pages/product-page.scss';

@@ -12,7 +12,7 @@
   backdrop-filter: blur(16px);
   background-color: rgba(0,0,0,0.25);
   transition: 0.25s;
-  z-index: 2;
+  z-index: 3;
 
   overflow: hidden;
 }
@@ -96,6 +96,9 @@
           border-bottom: get-vw(2px) solid white;
           color: white;
           @include muller-16-medium;
+          &::placeholder{
+            color: white;
+          }
         }
         @include labeled-checkbox-light;
         @include color-checkbox-light;

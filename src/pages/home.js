@@ -8,7 +8,7 @@ import Post from '../components/home/post.component.js';
 export default class Home extends Component{
 
   componentDidMount() {
-    this.getProductDetail();
+    this.getPosts();
     this.calculateVh();
   }
 
@@ -17,8 +17,8 @@ export default class Home extends Component{
     document.getElementById('top-container').style.setProperty('--vh', `${vh}px`);
   }
 
-  getProductDetail = () => {
-    let url = 'http://localhost/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=desc';
+  getPosts = () => {
+    let url = 'https://gotocart.z-test.online/wp-json/wp/v2/posts?_embed&filter[orderby]=date&order=desc';
     fetch(url, {
         method: 'GET',
         mode: 'cors'

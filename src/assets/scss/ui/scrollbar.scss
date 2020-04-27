@@ -1,0 +1,12 @@
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+  height: 100px;
+  background-color: #aaa; /* or add it to the track */
+  border-radius:get-vw(16px);
+}
+
+/* Add a thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: $black;
+    border-radius:get-vw(16px);
+}

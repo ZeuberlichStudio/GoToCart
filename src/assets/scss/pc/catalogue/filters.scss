@@ -20,7 +20,7 @@
   height: max-content;
   position: sticky;
   top: get-vw(94px);
-  
+
   &_form{
     width: 100%;
     display: grid;
@@ -39,7 +39,7 @@
         width: 100%;
         padding-left: get-vw(8px);
         @include muller-20-bold;
-        color: #282B2F;
+        color: $black;
       }
 
       & > :nth-child(n+2){
@@ -53,9 +53,12 @@
         width: 45%;
         min-width: get-vw(70px);
         max-width: get-vw(90px);
-        border-bottom: get-vw(2px) solid #282B2F;
-        color: #282B2F;
+        border-bottom: get-vw(2px) solid $black;
+        color: $black;
         @include muller-16-medium;
+        &::placeholder{
+          color: $black;
+        }
       }
       @include labeled-checkbox;
       @include color-checkbox;
@@ -77,19 +80,19 @@
       grid-auto-rows: get-vw(42px);
 
       border-radius: get-vw(22px);
-      border: get-vw(2px) solid #282B2F;
+      border: get-vw(2px) solid $black;
 
       & :first-child{
         margin-left: get-vw(-2px);
         border-radius: get-vw(22px);
-        background-color: #282B2F;
+        background-color: $black;
         color: white;
       }
 
       button{
         @include muller-20-medium;
         line-height: get-vw(46px);
-        color: #282B2F;
+        color: $black;
       }
     }
   }

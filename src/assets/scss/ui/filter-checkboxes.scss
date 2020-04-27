@@ -21,15 +21,15 @@
       display: block;
 
       border-radius: get-vw(22px);
-      border: get-vw(2px) solid #282B2F;
-      color: #282B2F;
+      border: get-vw(2px) solid $black;
+      color: $black;
 
       @include muller-16-medium;
       line-height: get-vw(29px);
     }
 
     input:checked ~ span{
-      background-color: #282B2F;
+      background-color: $black;
       color: white;
 
       &::before{
@@ -73,7 +73,7 @@
       display: block;
 
       border-radius: get-vw(22px);
-      border: get-vw(2px) solid #282B2F;
+      border: get-vw(2px) solid $black;
 
       i{
         width: get-vw(32px);
@@ -83,17 +83,17 @@
         display: block;
 
         border-radius: 50%;
-        border: get-vw(2px) solid #282B2F;
+        border: get-vw(2px) solid $black;
       }
     }
 
     input:checked ~ span{
-      background-color: #282B2F;
+      background-color: $black;
 
       &::before{
         width: get-vw(8px);
         height: get-vw(8px);
-        right: get-vw(12px);
+        right: get-vw(10px);
         top: 0; bottom: 0;
         margin: auto;
 
@@ -144,7 +144,7 @@
 
     input:checked ~ span{
       background-color: white;
-      color: #282B2F;
+      color: $black;
 
       &::before{
         width: get-vw(8px);
@@ -159,7 +159,7 @@
         mask-size: cover;
         mask-position: center;
         mask-repeat: no-repeat;
-        background-color: #282B2F;
+        background-color: $black;
         content: '';
       }
     }
@@ -198,6 +198,7 @@
 
         border-radius: 50%;
         border: get-vw(2px) solid white;
+        box-shadow: 0 0 get-vw(6px) $black;
       }
     }
 
@@ -207,7 +208,7 @@
       &::before{
         width: get-vw(8px);
         height: get-vw(8px);
-        right: get-vw(12px);
+        right: get-vw(10px);
         top: 0; bottom: 0;
         margin: auto;
 
@@ -217,7 +218,7 @@
         mask-size: cover;
         mask-position: center;
         mask-repeat: no-repeat;
-        background-color: #282B2F;
+        background-color: $black;
         content: '';
       }
     }

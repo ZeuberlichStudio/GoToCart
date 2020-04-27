@@ -32,9 +32,9 @@ export default class Header extends Component{
   render() {
     return(
       <header>
-        <div className="logo-wrapper">
+        <Link to="/" className="logo-wrapper">
           <img src={logo}/>
-        </div>
+        </Link>
         <button onClick={ this.openCatalog } className="catalog-button proxima-18 m-proxima-12">Каталог</button>
         <Search placeholder="Поиск"/>
         <nav className="navigation proxima-18">

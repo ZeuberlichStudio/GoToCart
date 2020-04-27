@@ -3,6 +3,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
 import Tabs from '../ui/tabs.component';
 import { VKShareButton, FBShareButton, FavButton } from 'components/ui/share-buttons.component';
+import Scrollbar from 'components/ui/scrollbar.component';
 
 export function ProductItemList(props) {
 
@@ -54,7 +55,7 @@ export function ProductItemList(props) {
   }
 
   function generateLink(id) {
-    let link = `http://localhost:3000${url}/${id}`;
+    let link = `http://localhost:3000/product=${id}`;
     return link;
   }
 
@@ -83,7 +84,7 @@ export function ProductItemList(props) {
         <img src={ thumb } />
       </div>
       <div className="catalog-item_content">
-        <h2><Link to={ `${url}/${id}` }>{ title }</Link></h2>
+        <h2><Link to={ `/product=${id}` }>{ title }</Link></h2>
         <span className="catalog-item_content_sku"><span>Арт: </span>{ sku }</span>
         <span className="catalog-item_content_brand">
           <span>Бренд: </span>
@@ -122,7 +123,7 @@ export function ProductItemList(props) {
           <button>Купить</button>
         </div>
         <div className="catalog-item_content_price">
-          <p>{ price }₽</p>
+          <p>{ price }Р</p>
           <span>Выше опт — ниже цена</span>
         </div>
       </div>
@@ -135,7 +136,7 @@ export function ProductItemGrid(props) {
   const { url } = useRouteMatch();
 
   function generateLink(id) {
-    let link = `http://localhost:3000${url}/${id}`;
+    let link = `http://localhost:3000/product=${id}`;
     return link;
   }
 
@@ -162,7 +163,7 @@ export function ProductItemGrid(props) {
       <div className="product-item_info">
         <div className="product-item_info_preview">
           <h2>{ title }</h2>
-          <span>{"До " + price }₽</span>
+          <span>{"До " + price } руб.</span>
         </div>
 
         <p className="product-item_info_desc">
@@ -175,8 +176,8 @@ export function ProductItemGrid(props) {
         </span>
 
         <div className="product-item_info_price-and-link proxima-18">
-          <span>{ price + "₽"}</span>
-          <Link to={ `${url}/${id}` }>Подробнее</Link>
+          <span>{ price + "Р"}</span>
+          <Link to={ `/product=${id}` }>Подробнее</Link>
         </div>
       </div>
     </div>

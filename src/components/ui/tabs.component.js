@@ -9,7 +9,6 @@ export default class Tabs extends Component {
 
   changeTab = e => {
     let tab = parseInt(e.currentTarget.dataset.tab);
-    let tab_content = document.getElementsByClassName(this.props.className + "_content")[0];
 
     this.setState({ changing: 1 });
     setTimeout( () => {
@@ -42,7 +41,7 @@ export default class Tabs extends Component {
           }
         </div>
         <div
-        className={ this.props.className + "_content" }
+        className={ this.props.className + "_content custom-scrollbar" }
         style={{
           opacity: this.state.changing ? 0 : 1,
           transition: "opacity 0.3s"

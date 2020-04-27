@@ -185,7 +185,7 @@ class MenuFilters extends Component{
               </div>
 
               <div className="menu_tabs_content_filters_form_fieldset">
-                <legend>Цена ₽</legend>
+                <legend>Цена (руб.)</legend>
                 <input type="number" data-filter="min_price" name="min_price" placeholder="От"/>
                 <input type="number" data-filter="max_price" name="max_price" placeholder="До"/>
               </div>

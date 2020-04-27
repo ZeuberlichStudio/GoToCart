@@ -3,7 +3,10 @@
 @import '../catalogue/category-item';
 @import '../catalogue/filters';
 
-#catalog{
+#catalog,
+#catalogue,
+#category,
+#search{
   width: 100vw;
   height: max-content;
   display: flex;

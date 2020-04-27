@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/GoToCart/static/css/main.0fd605b9.chunk.css",
+    "main.js": "/GoToCart/static/js/main.1425feff.chunk.js",
+    "main.js.map": "/GoToCart/static/js/main.1425feff.chunk.js.map",
+    "runtime-main.js": "/GoToCart/static/js/runtime-main.8ece6f29.js",
+    "runtime-main.js.map": "/GoToCart/static/js/runtime-main.8ece6f29.js.map",
+    "static/js/2.f383ab91.chunk.js": "/GoToCart/static/js/2.f383ab91.chunk.js",
+    "static/js/2.f383ab91.chunk.js.map": "/GoToCart/static/js/2.f383ab91.chunk.js.map",
+    "index.html": "/GoToCart/index.html",
+    "precache-manifest.17fcc440b250ed191d3b22fe06549240.js": "/GoToCart/precache-manifest.17fcc440b250ed191d3b22fe06549240.js",
+    "service-worker.js": "/GoToCart/service-worker.js",
+    "static/css/main.0fd605b9.chunk.css.map": "/GoToCart/static/css/main.0fd605b9.chunk.css.map",
+    "static/js/2.f383ab91.chunk.js.LICENSE.txt": "/GoToCart/static/js/2.f383ab91.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/GoToCart/static/media/vk.9c5ba7fb.svg",
+    "static/media/logo.svg": "/GoToCart/static/media/logo.c2bb9448.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ece6f29.js",
+    "static/js/2.f383ab91.chunk.js",
+    "static/css/main.0fd605b9.chunk.css",
+    "static/js/main.1425feff.chunk.js"
+  ]
+}

@@ -75,6 +75,10 @@ header{
       width: get-vw(150px);
       border-bottom: get-vw(2px) solid white;
       color: white;
+
+      &::placeholder{
+        color: white;
+      }
     }
   }
 

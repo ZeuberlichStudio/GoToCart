@@ -51,8 +51,8 @@ export default class Products extends Component{
       query[name] = value;
     });
 
-    if( !query['cat'] && this.props.match.params.subcat_id ){
-      query['cat'] = this.props.match.params.subcat_id;
+    if( !query['cat'] && this.props.match.params.cat_id ){
+      query['cat'] = this.props.match.params.cat_id;
     }
 
     if( !query['orderby'] && !query['order']){
@@ -160,7 +160,6 @@ export default class Products extends Component{
     } = this.state;
 
     return(
-      <main id="catalog">
         <section>
           <div className="catalog-container">
             <CatalogControls
@@ -209,7 +208,6 @@ export default class Products extends Component{
             </div>
           </div>
         </section>
-      </main>
     )
   }
 }

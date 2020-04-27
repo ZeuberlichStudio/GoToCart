@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState } from 'react';
+import React, { Component, Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Tabs from 'components/ui/tabs.component';
 import ReactHtmlParser from 'react-html-parser';
@@ -13,12 +13,13 @@ export default class Product extends Component {
   }
 
   state = {
+    product_id: this.props.match.params.product_id,
     product_data: null,
     currentVariation: 0,
   }
 
   fetchProductData = () => {
-    let url = `http://localhost/wp-json/product-fetcher/v1/products/${ this.props.match.params.product_id }`;
+    let url = `http://localhost/wp-json/product-fetcher/v1/products/${ this.state.product_id }`;
 
     fetch( url, {
       'method': 'get',
@@ -118,7 +119,7 @@ function ProductInfo(props) {
   const { product } = props;
 
   function composeAttributes( attributes ) {
-    return <ul className="product_info_tabs_content_attributes">
+    return <ul id="test" className="product_info_tabs_content_attributes">
              {
               attributes.map( attribute => {
                if ( attribute.name !== "бренд" && attribute.slug !== "pa_color" )
@@ -136,7 +137,7 @@ function ProductInfo(props) {
   }
 
   function composeComments( comments ) {
-    return <ul className="product_info_tabs_content_comments">
+    return <ul className="product_info_tabs_content_comments custom-scrollbar">
              {
                comments > 0 ?
                comments.map( comment =>
@@ -208,7 +209,7 @@ function ProductInfo(props) {
         <button>Купить</button>
       </div>
       <div className="product_info_price">
-        <p>{ product.price }₽</p>
+        <p>{ product.price }Р</p>
         <span>Выше опт — ниже цена</span>
       </div>
     </div>
