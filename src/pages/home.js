@@ -50,7 +50,7 @@ export default class Home extends Component{
           </p>
           <SearchBar placeholder="Например: кожаный чехол для iPhone 11"/>
           <Categories/>
-          <Slider id="slider-home-page"/>
+          <Slider postsCat="38" id="slider-home-page"/>
         </div>
         <div id="posts-container">
           { posts.map((post) => <Post post={post}/> ) }

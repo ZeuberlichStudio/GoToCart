@@ -3,7 +3,7 @@
 @import '~assets/scss/ui/product-attributes.scss';
 @import '~assets/scss/ui/share-buttons.scss';
 
-#individual-product-wrapper{
+#individual-product-modal-wrapper{
   width: 100vw;
   height: 100vh;
   left: 0; top: 0;
@@ -12,6 +12,16 @@
   background-color: rgba(0, 0, 0, 0.5);
   overflow-y: auto;
   z-index: 5;
+}
+
+#product{
+  padding-top: get-vw(86px);
+  padding-bottom: get-vw(30px);
+
+  #individual-product{
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 #individual-product{

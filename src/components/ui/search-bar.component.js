@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default class SearchBar extends Component{
 
@@ -37,15 +37,21 @@ export default class SearchBar extends Component{
     catch( err => console.log( err ) );
   }
 
+  submitSearch = e => {
+    e.preventDefault();
+    console.log('testing');
+  }
+
   render() {
 
     const {
       results,
     } = this.state;
+
     return(
       <div className="search-container">
         <div className={("search-bar ") + this.props.className}>
-          <form>
+          <form onSubmit={ e => this.submitSearch(e) }>
             <input onChange={ e => this.setState({ search: e.currentTarget.value }) } type="text" name="search" placeholder={ this.props.placeholder } className="proxima-18 m-proxima-12"/>
             <button></button>
           </form>
@@ -68,6 +74,7 @@ export default class SearchBar extends Component{
 }
 
 function SearchItem(props) {
+  let location = useLocation();
 
   function returnBrand ( attributes ) {
     let brand = attributes.find( attribute => attribute.name === 'бренд');
@@ -78,7 +85,10 @@ function SearchItem(props) {
 
   return(
     <li className="search_results_item">
-      <Link to={`catalogue/`}>
+      <Link to={{
+        pathname: `/product=${product.id}`,
+        state: { background: location }
+      }}>
         <img src={ product.images[0].src }/>
         <div className="search_results_item_info">
           <h2 className="search_results_item_info_title">{ product.name }</h2>

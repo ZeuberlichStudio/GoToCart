@@ -6,7 +6,7 @@ import { VKShareButton, FBShareButton, FavButton } from 'components/ui/share-but
 import { ProductItemGrid } from 'components/catalogue/product_item.component';
 import Loading from 'components/ui/loading.component';
 
-export default class Product extends Component {
+export default class ProductModal extends Component {
 
   componentDidMount() {
     this.fetchProductData();
@@ -48,7 +48,14 @@ export default class Product extends Component {
     let catLink = subcatLink.substring(0, subcatLink.lastIndexOf("/"));
 
     return(
-      <main id="product">
+      <div id="individual-product-modal-wrapper">
+        <style>
+          {
+            `body{
+              overflow: hidden
+            }`
+          }
+        </style>
         <section id="individual-product">
           <div id="individual-product_share" className="individual-product_share">
             <VKShareButton link={ path }/>
@@ -58,18 +65,21 @@ export default class Product extends Component {
           <Link id="individual-product_close" to={subcatLink}></Link>
           {
             product_data ?
+
             <Fragment>
               <div id="product-container" className="product">
                 <ProductImages product={ product_data.variations[currentVariation] }/>
                 <ProductInfo product={ product_data }/>
               </div>
               <RelatedProducts products={ product_data.related }/>
-            </Fragment> :
+            </Fragment>
+
+            :
+
             <Loading/>
           }
         </section>
-
-      </main>
+      </div>
     );
   }
 }

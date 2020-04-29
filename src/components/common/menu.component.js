@@ -128,8 +128,7 @@ class MenuFilters extends Component{
       query_params = query_params + `&max_stock=${filters.max_stock}`;
     }
 
-    console.log(query_params)
-    this.props.history.push(`/catalogue/search?${query_params}`);
+    this.props.history.push(`/search?${query_params}`);
   }
 
   render() {
@@ -292,7 +291,7 @@ class MenuCategories extends Component {
               subcats.map(
                 (subcat, i) =>
                 <li>
-                  <Link to={`catalogue/${ subcat.parent }/${ subcat.id }`}>{ subcat.name }</Link>
+                  <Link to={`/category=${subcat.id}`}>{ subcat.name }</Link>
                 </li>
               ) : null
             }
