@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GoToCart/static/css/main.69a12b8b.chunk.css",
+    "main.css": "/GoToCart/static/css/main.d1f79a1f.chunk.css",
     "main.js": "/GoToCart/static/js/main.0cb588fd.chunk.js",
     "main.js.map": "/GoToCart/static/js/main.0cb588fd.chunk.js.map",
     "runtime-main.js": "/GoToCart/static/js/runtime-main.8ece6f29.js",
@@ -8,9 +8,9 @@
     "static/js/2.6b478627.chunk.js": "/GoToCart/static/js/2.6b478627.chunk.js",
     "static/js/2.6b478627.chunk.js.map": "/GoToCart/static/js/2.6b478627.chunk.js.map",
     "index.html": "/GoToCart/index.html",
-    "precache-manifest.fc5c0397ad67ed6a51b4eb54ea839037.js": "/GoToCart/precache-manifest.fc5c0397ad67ed6a51b4eb54ea839037.js",
+    "precache-manifest.910db8df4b19c2e061ac0e8de7a3d46e.js": "/GoToCart/precache-manifest.910db8df4b19c2e061ac0e8de7a3d46e.js",
     "service-worker.js": "/GoToCart/service-worker.js",
-    "static/css/main.69a12b8b.chunk.css.map": "/GoToCart/static/css/main.69a12b8b.chunk.css.map",
+    "static/css/main.d1f79a1f.chunk.css.map": "/GoToCart/static/css/main.d1f79a1f.chunk.css.map",
     "static/js/2.6b478627.chunk.js.LICENSE.txt": "/GoToCart/static/js/2.6b478627.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/GoToCart/static/media/vk.23fafbb0.svg",
     "static/media/logo.svg": "/GoToCart/static/media/logo.c2bb9448.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.8ece6f29.js",
     "static/js/2.6b478627.chunk.js",
-    "static/css/main.69a12b8b.chunk.css",
+    "static/css/main.d1f79a1f.chunk.css",
     "static/js/main.0cb588fd.chunk.js"
   ]
 }
