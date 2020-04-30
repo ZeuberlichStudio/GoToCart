@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/GoToCart/static/css/main.2660fea8.chunk.css",
-    "main.js": "/GoToCart/static/js/main.ceaba006.chunk.js",
-    "main.js.map": "/GoToCart/static/js/main.ceaba006.chunk.js.map",
+    "main.js": "/GoToCart/static/js/main.a7c4f9b4.chunk.js",
+    "main.js.map": "/GoToCart/static/js/main.a7c4f9b4.chunk.js.map",
     "runtime-main.js": "/GoToCart/static/js/runtime-main.8ece6f29.js",
     "runtime-main.js.map": "/GoToCart/static/js/runtime-main.8ece6f29.js.map",
     "static/js/2.6b478627.chunk.js": "/GoToCart/static/js/2.6b478627.chunk.js",
     "static/js/2.6b478627.chunk.js.map": "/GoToCart/static/js/2.6b478627.chunk.js.map",
     "index.html": "/GoToCart/index.html",
-    "precache-manifest.30775935e3fceeef17988581b17e57a6.js": "/GoToCart/precache-manifest.30775935e3fceeef17988581b17e57a6.js",
+    "precache-manifest.69ccbed487217be08f9105a1df200cec.js": "/GoToCart/precache-manifest.69ccbed487217be08f9105a1df200cec.js",
     "service-worker.js": "/GoToCart/service-worker.js",
     "static/css/main.2660fea8.chunk.css.map": "/GoToCart/static/css/main.2660fea8.chunk.css.map",
     "static/js/2.6b478627.chunk.js.LICENSE.txt": "/GoToCart/static/js/2.6b478627.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.8ece6f29.js",
     "static/js/2.6b478627.chunk.js",
     "static/css/main.2660fea8.chunk.css",
-    "static/js/main.ceaba006.chunk.js"
+    "static/js/main.a7c4f9b4.chunk.js"
   ]
 }
